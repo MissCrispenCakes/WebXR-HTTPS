@@ -1,0 +1,42 @@
+{
+  "name": "webxr-https",
+  "version": "1.0.0",
+  "description": "boilerplates for WebVR/WebXR http(s)",
+  "main": "server.js",
+  "dependencies": {
+    "bufferutil": "^4.0.1",
+    "build": "^0.1.4",
+    "express": "^4.17.1",
+    "hookcord": "^2.0.2",
+    "hostname": "^1.0.4",
+    "last-commit-message": "^1.0.0",
+    "node": "^14.4.0",
+    "slack-webhook": "^1.0.0",
+    "three": "^0.116.1",
+    "utf-8-validate": "^5.0.2",
+    "webhook-discord": "^3.7.4",
+    "webxr-polyfill": "^2.0.3",
+    "ws": "^7.3.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "n/a",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MissCrispenCakes/WebXR-HTTPS.git"
+  },
+  "author": "miss.crispen.cakes@gmail.com",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/MissCrispenCakes/WebXR-HTTPS/issues"
+  },
+  "homepage": "https://github.com/MissCrispenCakes/WebXR-HTTPS#readme",
+  "keywords": [
+    "webxr",
+    "webvr",
+    "http",
+    "https"
+  ]
+}
