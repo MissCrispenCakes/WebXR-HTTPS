@@ -121,29 +121,8 @@ wss.on('connection', function(ws, req) {
 			//console.log(new Float32Array(ab));
 
 		} else {
-
-			if (msg == "getData") {
-				// reply:
-				
-				console.log("hi")
-
-				//ws.send(JSON.stringify({ cmd:"newData", state: manus.state }))
-
-				ws.send(JSON.stringify({ cmd: "trackingData", state:getTrackingData() }))
-			
-			} else if (msg == "sendHaptics") {
-		
-				console.log("hi")
-
-			} else if (msg == "sendHaptics_back") {
-
-				console.log("hi")
-				
-			} else {
-
 				console.log("received message from client:", id, msg);
 			}
-		}
 	});
 	
 	// Example sending binary:
