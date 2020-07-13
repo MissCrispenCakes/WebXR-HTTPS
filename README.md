@@ -5,6 +5,7 @@ set up with ThreeJS VR painting scene
 clone repo ..
 
 then run: 
+npm install
 npm update
 node ./server.js 
 
