@@ -3,7 +3,6 @@ import { OrbitControls } from './js/OrbitControls.js';
 import { TubePainter } from './js/TubePainter.js';
 import { VRButton } from './js/VRButton.js';
 //import { EnterXRButton } from './js/webxr-button.js';
-//let EnterXRButton = new window.XRDeviceButton;
 
 let state = null;
 let sock;
@@ -70,29 +69,7 @@ function connect_to_server( opt, log ) {
         log( "ws received arraybuffer of " + e.data.byteLength + " bytes" )
 
         //}
-
       } 
-      // else {
-  
-      //   let msg = e.data;
-			// 	let obj;
-  
-      //   try {
-  
-      //     obj = JSON.parse( msg );
-  
-      //   } catch( e ) {}
-  
-      //   if ( obj.cmd == "newData" ) {
-  
-      //     state = obj.state;
-  
-			// 	} else {
-          
-      //     log( "ws received", msg );
-  
-      //   }
-			// } 
 		}
   
     self.socket.onclose = function( e ) {
@@ -201,41 +178,6 @@ function init() {
 
   var painter2 = new TubePainter();
   scene.add( painter2.mesh );
-
-  //
-
-
-  ////////////////////
-  // get triangle from houdini .obj output ?
-
-  var loader = new THREE.ObjectLoader();
-
-  loader.load(
-    // resource URL
-    "geometry.json",
-
-    // onLoad callback
-    // Here the loaded data is assumed to be an object
-    function ( obj ) {
-      // Add the loaded object to the scene
-      scene.add( obj );
-    },
-
-    // onProgress callback
-    function ( xhr ) {
-      console.log( (xhr.loaded / xhr.total * 100) + '% loaded' );
-    },
-
-    // onError callback
-    function ( err ) {
-      console.error( 'An error happened' );
-    }
-  );
-
-
-
-  ///////////////////
-
 
   renderer = new THREE.WebGLRenderer( { antialias: true } );
   renderer.setPixelRatio( window.devicePixelRatio );
