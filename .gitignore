@@ -1,8 +1,10 @@
-    # pesky Ds Store!
-    .DS_Store
-    */.DS_Store
+# pesky Ds Store!
+.DS_Store
+*/.DS_Store
 
-
+# directories
+build/
+ignore/
 
 # Logs
 logs
@@ -46,9 +48,6 @@ build/Release
 # Dependency directories
 node_modules/
 jspm_packages/
-
-build/
-ignore/
 
 # TypeScript v1 declaration files
 typings/
