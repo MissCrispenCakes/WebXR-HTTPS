@@ -15,3 +15,4 @@ to make your own certs look in make folder and adjust as neccesary
 then run:
 
 ./init.sh
+./clean.sh
