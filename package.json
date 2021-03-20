@@ -16,7 +16,7 @@
     "last-commit-message": "^1.0.0",
     "node": "^14.5.0",
     "slack-webhook": "^1.0.0",
-    "three": "^0.118.3",
+    "three": ">=0.125.0",
     "utf-8-validate": "^5.0.2",
     "webhook-discord": "^3.7.5",
     "webxr-polyfill": "^2.0.3",
